@@ -6,7 +6,7 @@ export SHARED_KEY=$(uuidgen)
 export IP=$(curl -s api.ipify.org)
 
 echo "Your shared key (PSK) is $SHARED_KEY and your IP is $IP"
-read -p "Press enter to continue"
+echo -e "Press enter to continue...\n"; read
 
 apt-get update
 apt-get -y upgrade
