@@ -7,6 +7,10 @@ It requires a fresh `Ubuntu 16.04`
 
 You're welcome to browse the `.sh` files and hack your own out of those, or just use the commands below to quickly get the job done.
 
+### Example usage with PSK on macOS
+
+![macos setup demo](https://github.com/truemetal/ikev2_vpn/raw/master/macos%20setup%20demo.gif)
+
 ### Deploy with Pre Shared Key auth
 
 This script would uuidgen a PSK and print it out to console, where you can copy and hit enter to continue.
