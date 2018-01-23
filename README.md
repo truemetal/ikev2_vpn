@@ -7,10 +7,6 @@ It requires a fresh `Ubuntu 16.04`
 
 You're welcome to browse the `.sh` files and hack your own out of those, or just use the commands below to quickly get the job done.
 
-### Example usage with PSK on macOS
-
-![macos setup demo](https://github.com/truemetal/ikev2_vpn/raw/master/macos%20setup%20demo.gif)
-
 ### Deploy with Pre Shared Key auth
 
 This script would uuidgen a PSK and print it out to console, where you can copy and hit enter to continue.
@@ -30,7 +26,9 @@ After you `ssh your_vpn_machine`, just run this:
 curl -L https://raw.githubusercontent.com/truemetal/ikev2_vpn/master/ikev2-deploy-certs.sh -o /tmp/deploy.sh && chmod +x /tmp/deploy.sh && /tmp/deploy.sh
 ```
 
-<br>
+### Example macOS client setup (PSK)
+
+![macos setup demo](https://github.com/truemetal/ikev2_vpn/raw/master/macos%20setup%20demo.gif)
 
 ---
 
