@@ -1,3 +1,7 @@
+if [ $(lsb_release -i -s) != "Ubuntu" ] || [ $(lsb_release -r -s) != "16.04" ]; 
+        then echo -e "\033[31;7mThis script supports only Ubuntu 16.04. Terminating.\e[0m"; exit -1; 
+fi
+
 export REGION=GB
 export IP=$(curl -s api.ipify.org)
 

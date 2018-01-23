@@ -1,5 +1,12 @@
-export REGION=GB
+if [ $(lsb_release -i -s) != "Ubuntu" ] || [ $(lsb_release -r -s) != "16.04" ]; 
+        then echo -e "\033[31;7mThis script supports only Ubuntu 16.04. Terminating.\e[0m"; exit -1; 
+fi
+
+export SHARED_KEY=$(uuidgen)
 export IP=$(curl -s api.ipify.org)
+
+echo "Your shared key (PSK) is $SHARED_KEY and your IP is $IP"
+read -p "Press enter to continue"
 
 apt-get update
 apt-get -y upgrade
@@ -33,7 +40,7 @@ conn ikev2-vpn
     dpddelay=300s
     rekey=no
     left=%any
-    leftid=@server_name_or_ip
+    leftid=%any
     leftsubnet=0.0.0.0/0
     right=%any
     rightid=%any
@@ -47,7 +54,7 @@ sed -i "s/@server_name_or_ip/${IP}/g" /etc/ipsec.conf
 ## add secrets to /etc/ipsec.secrets
 cat << EOF > /etc/ipsec.secrets
 
-: PSK this-is-a-pre-shared-key
+: PSK $SHARED_KEY
 EOF
 
 sed -i "s/server_name_or_ip/${IP}/g" /etc/ipsec.secrets
