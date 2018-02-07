@@ -15,7 +15,7 @@ This script would uuidgen a PSK and print it out to console, where you can copy 
 
 After you `ssh your_vpn_machine`, just run this: 
 ```
-curl -L https://raw.githubusercontent.com/truemetal/ikev2_vpn/master/ikev2-deploy-psk.sh -o /tmp/deploy.sh && chmod +x /tmp/deploy.sh && /tmp/deploy.sh
+curl -L https://raw.githubusercontent.com/truemetal/ikev2_vpn/master/ikev2-deploy-psk.sh -o ~/deploy.sh && chmod +x ~/deploy.sh && ~/deploy.sh
 ```
 
 ### Deploy with cert / username-password auth
@@ -25,7 +25,7 @@ The .pem files would be in `~/vpn-certs/`
 
 After you `ssh your_vpn_machine`, just run this: 
 ```
-curl -L https://raw.githubusercontent.com/truemetal/ikev2_vpn/master/ikev2-deploy-certs.sh -o /tmp/deploy.sh && chmod +x /tmp/deploy.sh && /tmp/deploy.sh
+curl -L https://raw.githubusercontent.com/truemetal/ikev2_vpn/master/ikev2-deploy-certs.sh -o ~/deploy.sh && chmod +x ~/deploy.sh && ~/deploy.sh
 ```
 
 ### Example macOS client setup (PSK)
