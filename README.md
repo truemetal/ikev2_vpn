@@ -30,7 +30,11 @@ curl -L https://raw.githubusercontent.com/truemetal/ikev2_vpn/master/ikev2-deplo
 
 ### Example macOS client setup (PSK)
 
-![macos setup demo](https://github.com/truemetal/ikev2_vpn/raw/master/macos%20setup%20demo.gif)
+![macos setup demo](https://github.com/truemetal/ikev2_vpn/raw/master/macos%20setup%20demo%20%28PSK%29.gif)
+
+### Example deployment and macOS client setup (certs)
+
+![deployment and macOS client setup](https://youtu.be/hZS4DHjmfP0)
 
 ---
 
