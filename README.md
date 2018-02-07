@@ -34,7 +34,7 @@ curl -L https://raw.githubusercontent.com/truemetal/ikev2_vpn/master/ikev2-deplo
 
 ### Example deployment and macOS client setup (certs)
 
-![deployment and macOS client setup](https://youtu.be/hZS4DHjmfP0)
+[![deployment and macOS client setup](https://www.evernote.com/l/AYUI6WrqTWRLEYTXP9sunLC8zidWjm9MRLsB/image.png)](https://youtu.be/hZS4DHjmfP0)
 
 ---
 
